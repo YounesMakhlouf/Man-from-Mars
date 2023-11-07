@@ -94,11 +94,11 @@ h2 {
 }
 
 .parallax__rover {
-    --parallax-speed: 15;
+    --parallax-speed: 30;
 
-    max-width: 30%;
+    max-width: min(30%, 300px);
     position: absolute;
-    bottom: 200px;
+    bottom: 30%;
     left: 0;
     z-index: 3;
 }
@@ -106,7 +106,7 @@ h2 {
 .parallax__martian {
     --parallax-speed: 10;
 
-    max-width: 30%;
+    max-width: min(50%, 400px);
     position: absolute;
     bottom: 10%;
     right: 10%;
@@ -253,11 +253,9 @@ input {
     border-radius: 10px;
     color: hsl(279, 75%, 59%);
     font-size: var(--step-0);
-    font-weight: 700;
-    height: auto;
-    line-height: 100%;
-    padding: 24px 72px 24px 32px;
+    padding: 1.25em;
     width: 80%;
+    max-width: 75%;
     margin-block: 1em;
 }
 
