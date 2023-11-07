@@ -94,7 +94,7 @@ h2 {
 }
 
 .parallax__rover {
-    --parallax-speed: 50;
+    --parallax-speed: 15;
 
     max-width: 30%;
     position: absolute;
@@ -108,8 +108,8 @@ h2 {
 
     max-width: 30%;
     position: absolute;
-    top: 100px;
-    right: 100px;
+    bottom: 10%;
+    right: 10%;
     z-index: 5;
 }
 
@@ -133,7 +133,6 @@ h2 {
 
 .main-content {
     position: relative;
-    /*z-index: 1;*/
     background: hsl(238, 100%, 6%);
     padding-block: 6rem;
 }
@@ -148,12 +147,6 @@ h2 {
 
 .primary-nav {
     display: none;
-}
-
-.primary-header__inner {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .primary-nav ul {
@@ -224,11 +217,6 @@ h2 {
     text-align: center;
 }
 
-/*.main-content p:not(:last-child) {*/
-/*    margin-block-end: 2em;*/
-/*}*/
-
-
 #author, #join-the-adventure {
     text-align: center;
 }
@@ -242,7 +230,7 @@ h2 {
 }
 
 .name {
-    color: deepskyblue;
+    color: hsl(279, 75%, 59%);
 }
 
 
@@ -278,6 +266,13 @@ input {
         display: flex;
         justify-content: space-around;
     }
+
+    .primary-header__inner {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
 
     .hero-grid {
         display: grid;
