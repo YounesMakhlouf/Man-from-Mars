@@ -11,6 +11,7 @@
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect"/>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,700;1,900&display=swap" rel="stylesheet"/>
     <link href="node_modules/font-awesome/css/font-awesome.css" rel="stylesheet"/>
+    <link href="reset.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
@@ -34,11 +35,11 @@
         </div>
     </header>
     <div class="hero">
-        <div class="wrapper">
+        <div class="wrapper flow">
             <h1 class="hero__title">
                 <span>Greetings, Human!</span> Join me on a journey to discover your world
             </h1>
-            <button class="button">Start exploring</button>
+            <a class="button" href="https://younesmakhlouf.substack.com/">Start exploring</a>
         </div>
     </div>
 
@@ -51,22 +52,22 @@
 </div>
 
 <main class="main-content">
-    <div class="wrapper" id="meet-our-hero">
+    <div class="wrapper flow" id="meet-our-hero">
         <div class="hero-grid">
             <div class="meet__description">
                 <h2>Meet Our Hero</h2>
-                <p>Unlike the Martians around him, Zorbon had always felt an unquenchable thirst for the unknown. He
+                <p class="before-button">Unlike the Martians around him, Zorbon had always felt an unquenchable thirst for the unknown. He
                     would gaze at the night sky and wonder about the pinpricks of light in the distance, and what worlds
                     lay beyond.</p>
-                <button class="button">Start exploring</button>
+                <a class="button" href="https://younesmakhlouf.substack.com/">Start exploring</a>
             </div>
             <img alt="martian" class="meet__img" height="476" src="assets/martian.png" width="288"/>
         </div>
     </div>
-    <div class="wrapper" id="author">
-        <div class="author__description">
+    <div class="wrapper flow" id="author">
+        <div class="author__description flow">
             <h2>The author</h2>
-            <img class="author__img" height="4000" src="assets/IMG_2012.JPG" width="4000" alt="Younes Makhlouf"/>
+            <img alt="Younes Makhlouf" class="author__img" height="4000" src="assets/IMG_2012.JPG" width="4000"/>
             <p>Hi, I'm <span class="name">Younes Makhlouf</span>, a software engineering student from Tunisia.
                 Just like our intrepid Martian explorer, I have an insatiable curiosity and a passion for learning
                 new things.
@@ -85,12 +86,13 @@
 
         <!--        </div>-->
     </div>
-    <div class="wrapper" id="join-the-adventure">
+    <div class="wrapper flow" id="join-the-adventure">
         <p class="announcement">Looking for brave adventurers</p>
         <h2>Stay updated</h2>
-        <p>Subscribe to not miss anything about Zorbon's story</p>
-        <input aria-label="email" placeholder="Enter Email" type="email">
-        <button class="button" type="submit">Submit</button>
+        <p class="before-button">Subscribe to not miss anything about Zorbon's story</p>
+        <a class="button" href="https://younesmakhlouf.substack.com/">Join the adventure</a>
+        <!--        <input aria-label="email" placeholder="Enter Email" type="email">-->
+        <!--        <button class="button" type="submit">Submit</button>-->
 
     </div>
 </main>
