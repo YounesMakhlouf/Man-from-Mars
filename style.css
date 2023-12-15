@@ -1,9 +1,12 @@
 :root {
-    --ff-base: "Rubik", sans-serif;
+    --clr-background: hsl(238, 100%, 6%);
     --clr-text: hsl(0, 0%, 100%);
     --clr-primary: hsl(279, 75%, 59%);
     --clr-body: hsl(204, 20%, 85%);
     --clr-accent: pink;
+
+    --ff-base: "Rubik", sans-serif;
+
     --fs-300: clamp(1.125rem, 1.081rem + 0.1878vw, 1.25rem);
     --fs-400: clamp(1.35rem, 1.2386rem + 0.4751vw, 1.6663rem);
     --fs-500: clamp(1.62rem, 1.4083rem + 0.9033vw, 2.2213rem);
@@ -73,9 +76,11 @@ a:hover, a:focus {
     position: relative;
     z-index: 0;
     min-height: 75vh;
+    min-height: 75svh;
     display: grid;
     grid-template-areas: "stack";
     text-transform: uppercase;
+    contain: paint;
 }
 
 .parallax > * {
@@ -150,7 +155,7 @@ a:hover, a:focus {
 
 .main-content {
     position: relative;
-    background: hsl(238, 100%, 6%);
+    background: var(--clr-background);
     padding-block: 6rem;
 }
 
@@ -186,7 +191,7 @@ a:hover, a:focus {
 }
 
 .hero {
-    margin-block-start: max(20vh, 8rem);
+    margin-block-start: max(20svh, 8rem);
 }
 
 .hero__title {
@@ -252,7 +257,7 @@ a:hover, a:focus {
     margin-block-end: 0.25rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 50em) {
     .primary-nav {
         display: flex;
         justify-content: space-around;
