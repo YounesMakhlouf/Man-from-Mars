@@ -89,10 +89,6 @@ a:hover, a:focus {
     animation-timeline: scroll();
 }
 
-.parallax > img {
-    width: 100%;
-}
-
 .primary-header,
 .hero {
     --parallax-speed: 10;
@@ -255,6 +251,10 @@ a:hover, a:focus {
 .announcement {
     text-transform: uppercase;
     margin-block-end: 0.25rem;
+}
+
+.socials a{
+    margin-inline-end: 1rem;
 }
 
 @media (min-width: 50em) {
