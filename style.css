@@ -89,6 +89,9 @@ a:hover, a:focus {
     grid-template-areas: "stack";
     text-transform: uppercase;
     contain: paint;
+    background-image: url(/assets/bg.webp);
+    background-position: center;
+    background-size: cover;
 }
 
 .parallax > * {
