@@ -3,8 +3,7 @@
     --clr-text: hsl(0, 0%, 100%);
     --clr-primary: hsl(279, 75%, 59%);
     --clr-body: hsl(204, 20%, 85%);
-    --clr-accent: pink;
-
+    --clr-accent: hsl(340, 100%, 50%);
     --ff-base: "Rubik", sans-serif;
 
     --fs-300: clamp(1.125rem, 1.081rem + 0.1878vw, 1.25rem);
@@ -28,6 +27,8 @@ body {
     font-size: var(--fs-400);
     font-weight: 700;
     color: var(--clr-body);
+    background: var(--clr-background);
+    line-height: 1.6;
 }
 
 h1, h2, h3 {
@@ -60,10 +61,7 @@ h2 {
 a {
     text-decoration: none;
     color: var(--clr-text);
-}
-
-a:hover, a:focus {
-    color: var(--clr-accent);
+    transition: color 0.3s;
 }
 
 .button {
@@ -78,6 +76,11 @@ a:hover, a:focus {
     border-radius: 0.125em;
     z-index: 999;
     cursor: pointer;
+    transition: background 1s;
+}
+
+.button:hover, .button:focus {
+    background: var(--clr-accent);
 }
 
 .parallax {
@@ -88,10 +91,7 @@ a:hover, a:focus {
     display: grid;
     grid-template-areas: "stack";
     text-transform: uppercase;
-    contain: paint;
-    background-image: url(/assets/bg.webp);
-    background-position: center;
-    background-size: cover;
+    background: var(--clr-background) url(/assets/bg.webp) center/cover no-repeat;
 }
 
 .parallax > * {
@@ -112,7 +112,6 @@ a:hover, a:focus {
 
     z-index: 1;
     min-height: 100%;
-    width: 100%;
     object-fit: cover;
 }
 
@@ -152,6 +151,10 @@ a:hover, a:focus {
     transform: scaleY(1.2);
     transform-origin: bottom;
     mix-blend-mode: hard-light;
+}
+
+.background {
+    width: 100%;
 }
 
 @keyframes parallax {
@@ -283,7 +286,7 @@ a:hover, a:focus {
     .hero-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-column-gap: 0.5em;
+        grid-column-gap: 1em;
         justify-content: center;
         align-items: center;
     }
