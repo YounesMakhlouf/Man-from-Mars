@@ -61,7 +61,14 @@ h2 {
 a {
     text-decoration: none;
     color: var(--clr-text);
+}
+
+.nav-link {
     transition: color 1s;
+
+    &:hover, &:focus {
+        color: var(--clr-accent);
+    }
 }
 
 .button {
@@ -77,12 +84,12 @@ a {
     border-radius: 0.125em;
     z-index: 999;
     cursor: pointer;
-}
+    transition: background-color 1s;
 
-a:hover, a:focus {
-    color: var(--clr-accent);
+    &:hover, &:focus-visible {
+        background: oklch(from var(--clr-primary) calc(l * .5) calc(c * 0.75) h);
+    }
 }
-
 
 .parallax {
     position: relative;
