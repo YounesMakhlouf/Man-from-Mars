@@ -64,7 +64,7 @@ a {
 }
 
 .nav-link {
-    transition: color 1s;
+    transition: color s0.5;
 
     &:hover, &:focus {
         color: var(--clr-accent);
